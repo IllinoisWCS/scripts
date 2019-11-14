@@ -2,7 +2,7 @@ import csv
 import requests
 
 def getData():
-  memberInfo = requests.get('http://localhost:3000/api/users/')
+  memberInfo = requests.get('http://points-api.illinoiswcs.org/api/users/')
   memberObject = memberInfo.json()
   # print(memberObject)
   columns = []
